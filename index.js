@@ -43,7 +43,7 @@ app.use(cors({
       'http://localhost:5173',
       'http://127.0.0.1:5173',
       'http://localhost:3000',
-      'https://micole-p6jy.vercel.app'
+      'https://coleapp.pages.dev'
     ];
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
