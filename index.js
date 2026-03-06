@@ -1,5 +1,4 @@
 const express = require("express");
-app.set('trust proxy', 1);
 const cors = require("cors");
 require("dotenv").config();
 const helmet = require("helmet");
@@ -35,6 +34,7 @@ const { pool } = require("./src/config/database");
 const logger = require("./src/config/logger");
 
 const app = express();
+app.set('trust proxy', 1);
 app.locals.pool = pool;
 
 // Middleware
